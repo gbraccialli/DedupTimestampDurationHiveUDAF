@@ -1,4 +1,7 @@
-CREATE TEMPORARY FUNCTION dedup_timestamp_duration AS 'com.github.gbraccialli.hive.udaf.DedupTimestampDurationHiveUDAF' USING JAR 'hdfs:///jars/DedupTimeStampDurationHiveUDAF-1.0-SNAPSHOT-jar-with-dependencies.jar'
+!connect jdbc:hive2://localhost:10000/default
+
+CREATE TEMPORARY FUNCTION dedup_timestamp_duration AS 'com.github.gbraccialli.hive.udaf.DedupTimestampDurationHiveUDAF' USING JAR 'hdfs:///jars/DedupTimeStampDurationHiveUDAF-1.0-SNAPSHOT-jar-with-dependencies.jar';
+
 set hive.map.aggr=false;
 
 SELECT inline(record) as (date,time,duration,cdr_type,num_a,num_b,central,erb,imsi,emei,other1,other2,other3)
