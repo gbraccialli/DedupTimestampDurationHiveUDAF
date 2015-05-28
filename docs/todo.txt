@@ -1,0 +1,2 @@
+- current only hive.map.aggr=false is supported. need to implement logic and methods to partial aggregation on mapside (see TODO marks on source code)
+
