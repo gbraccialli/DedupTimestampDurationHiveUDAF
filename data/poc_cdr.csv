@@ -1,4 +1,3 @@
-date,hour,duracao,tipo_cdr,num_a,num_b,central,erb,imsi,emei,outro1,outro2,outro3
 20140514,112747,235,1,11988556685,11923428108,a,a,a,a,z,z,z
 20140514,112748,234,2,11988556685,11923428108,a,a,a,a,z,z,z
 20140514,112749,233,8,11988556685,11923428108,a,a,a,a,z,z,z
